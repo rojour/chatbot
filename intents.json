@@ -1,0 +1,42 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "services",
+         "patterns": ["What services do you offer?", "What do you do?", "What can you offer?" ],
+         "responses": ["Credit Card Processing, In-store payments, Online payments, Omnichannel"]
+        },
+        {"tag": "processing",
+         "patterns": ["Credit Card Processing" ],
+         "responses": ["Accept all payment types, Sell on demand, Speed Checkout"]
+        },
+        {"tag": "in-store-payments",
+         "patterns": ["Do you offer in-store payments?", "Process in-store payments", "Are in-store payments an option" ],
+         "responses": ["We offer terminals, POS Systems, Mobile card reader, Virtual Terminals", "Payments by card, mobile, ACH and eCheck, Gift, Prepaid", "Omnishield fraud protection"]
+        },
+        {"tag": "online-payment",
+         "patterns": ["Online payments?", "Online services?", "Online options?"],
+         "responses": ["Fast track", "Integrated payment processing", "Online fraud protection", "Better experience and better reporting"]
+        },
+        {"tag": "omnichannel",
+         "patterns": ["Omnichanel?", "How about Omnichannel", "Enterprise solutions?", "Omnichannel commerce" ],
+         "responses": ["Payments: Acceptance, International, Mobile, ERP Solutions", "Revenue: Approval Optimization, Least cost routing, ACH", "Security: eProtect/Omnitoken, Fraud prevention, Chargeback management.", "Data: Issuer Insights for eCommerce, IQ Reporting, Data product portfolio"],
+         "context_set": "rentalday"
+        },
+        {"tag": "ready",
+         "patterns": ["ready"],
+         "responses": ["Visit us at https://www.vantiv.com/get-quote", "We are happy to assit you at https://www.vantiv.com/get-quote"],
+         "context_filter": "rentalday"
+        }
+   ]
+}
